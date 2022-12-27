@@ -1,0 +1,340 @@
+<html>
+	<head>
+		<title>Travellers</title>
+		
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+		<header>
+			<div class="container-fluid m-0 p-0">
+				<nav class="navbar navbar-expand-sm bg-light">
+					<a class="navbar-brand" href="#">Travellers</a>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="destination.html">Destinations</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="destination.html">Discount</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="blog.html">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.google.com/search?q=facebook&rlz=1C1CHBF_enNP1023NP1023&oq=face&aqs=chrome.0.0i131i433i512j69i57j0i131i433i512l2j0i433i512j0i131i433i512l3j0i433i512.2831j0j7&sourceid=chrome&ie=UTF-8"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.google.com/search?q=instagram&rlz=1C1CHBF_enNP1023NP1023&oq=instr&aqs=chrome.1.69i57j0i10i67j0i67l3j0i10i131i433i512j0i512l3.3708j0j7&sourceid=chrome&ie=UTF-8"><i class="fab fa-instagram"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.google.com/search?q=twitter&rlz=1C1CHBF_enNP1023NP1023&ei=fjaoY-CYK6aaseMP36GGgA0&gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYi8pzywpSS0CAFnOB00&oq=twittw&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMhAILhCxAxCDARDHARDRAxBDMgoIABCxAxCDARBDMgoIABCxAxCDARBDMg8IABCABBCxAxCDARAKEBMyDAgAEIAEELEDEAoQEzIMCC4QgAQQsQMQChATMgkILhCABBAKEBMyDAgAEIAEELEDEAoQEzIMCAAQgAQQsQMQChATMgkIABCABBAKEBM6CggAEEcQ1gQQsAM6BwgAELADEEM6CwgAEIAEELEDEIMBOggIABCABBCxAzoMCAAQ6gIQtAIQQxgBOhYIABDqAhC0AhCKAxC3AxDUAxDlAhgBOhMIABCPARDqAhC0AhCMAxDlAhgCOhMILhCPARDqAhC0AhCMAxDlAhgCOggILhCxAxCDAToFCAAQgAQ6BQguEIAEOgQIABADOggIABCxAxCDAToQCC4QgwEQxwEQsQMQ0QMQQzoECAAQQzoHCAAQsQMQQzoNCAAQgAQQsQMQgwEQEzoKCC4QgAQQsQMQEzoNCC4QgAQQsQMQ1AIQEzoKCAAQgAQQsQMQEzoHCC4QgAQQEzoICC4QgAQQsQNKBAhBGABKBAhGGAFQigZYlx5glzJoAnABeASAAfgBiAGxDpIBBTAuOC4zmAEAoAEBsAETyAEKwAEB2gEECAEYB9oBBggCEAEYCg&sclient=gws-wiz-serp"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.google.com/search?q=linkedin+login&rlz=1C1CHBF_enNP1023NP1023&ei=OjeoY__ULbuTseMP_vK5sAQ&oq=linke&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgBMhAILhCDARDHARCxAxDRAxBDMgoIABCxAxCDARBDMhAILhCxAxCDARDHARDRAxBDMgsIABCABBCxAxCDATILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoKCAAQRxDWBBCwAzoHCAAQsAMQQzoSCC4QxwEQ0QMQyAMQsAMQQxgBOgwILhDIAxCwAxBDGAE6CwgAELEDEIMBEJECOggIABCxAxCRAjoICAAQsQMQgwE6DAgAEOoCELQCEEMYAjoSCC4QxwEQ0QMQ6gIQtAIQQxgCOhYIABDqAhC0AhCKAxC3AxDUAxDlAhgCOhMIABCPARDqAhC0AhCMAxDlAhgDOhMILhCPARDqAhC0AhCMAxDlAhgDOgUIABCRAjoOCC4QsQMQgwEQxwEQrwE6CwguEIAEELEDEIMBOggILhCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6BAguEEM6BAgAEEM6BwguELEDEEM6CgguEMcBENEDEEM6BwgAELEDEEM6CggAEIAEELEDEBM6DQgAEIAEELEDEIMBEBM6EwguEIAEELEDEIMBEMcBENEDEBM6CAgAEIAEELEDSgQIQRgASgQIRhgBUKQEWNkiYNwwaAJwAXgEgAGgA4gB4g6SAQgwLjEwLjQtMZgBAKABAbABE8gBC8ABAdoBBAgBGAjaAQQIAhgH2gEGCAMQARgK&sclient=gws-wiz-serp"><i class="fab fa-linkedin-in"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			
+			<div class="container-fluid m-0 p-0">
+				<div id="demo" class="carousel slide" data-ride="carousel">
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" active></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+					</ul>
+					
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="images/hero_bg_1.jpg" width="100%" height="100%">
+							<div class="carousel-caption">
+								<h1>Never Stop Exploring</h1>
+								<p class="mb-5">Explore yourself around the world and know adventerous of world. Don't Forget to have such experiences.</p>
+								
+								<p><a href="#" type="button" class="btn1">Book Now</a></p>
+								<!--
+								<p><a href="#" class="btn btn-primary py-3 px-5 text-white">Book Now</a></p>  -->
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="images/hero_bg_2.jpg" width="100%" height="100%">
+							<div class="carousel-caption">
+								<h1>Love The Places</h1>
+								<p class="mb-5">Love the beautiful places. visits around the world and great places. Fuga est inventore ducimus repudiandae.</p>
+								<p><a href="#" type="button" class="btn1">Book Now</a></p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="images/hero_bg_3.jpg" width="100%" height="100%">
+							<div class="carousel-caption">
+								<h1>SEE NATURAL BEAUTY</h1>
+								<p class="mb-5">From a skier's point of view, Natural Beauties, everything you can dream about is waiting for you.</p>
+								
+								<p><a href="#" type="button" class="btn1">Book Now</a></p>
+								<!--
+								<p><a href="#" class="btn btn-primary py-3 px-5 text-white">Book Now</a></p>   -->
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+					<a class="carousel-control-next" href="#demo" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="section-1">
+				<div class="container">
+					<div class="pic">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/img_2.jpg" width="100%">
+							<div class="unit-1-text">
+								<h4 class="unit-1-heading">Write Down Your Experience</h4>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<img src="images/img_1.jpg" width="100%">
+							<div class="unit-1-text">
+								<h4 class="unit-1-heading">Explore Asian Mountains</h4>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<img src="images/img_3.jpg" width="100%">
+							<div class="unit-1-text">
+								<h4 class="unit-1-heading">Safe Trip With Airasia</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="travel-faci">
+					<div class="row">
+						<div class="col-md-4">
+							<div></div>
+							<h3>Air Ticketing</h3>
+							<p>Enjoy Easy Cancellation & Instant Refunds with Flexible Date Change of Flight Tickets. Easily compare and book from a wide selection of International flights on MakeMyTrip. Compare Low Cost Flights. Earn Loyalty point & Save. Plan Your Trip Now. No Cost EMI.</p>
+							<p><a href="#">Learn more</a></p>
+						</div>
+						<div class="col-md-4">
+							<h3>Cruises</h3>
+							<p>Discover our luxury cruises to the Caribbean, Mediterranean, Alaska & more. Voted best premium Cruise Line 14 years running. Book your cruise today!</p>
+							<p><a href="#">Learn more</a></p>
+						</div>
+						<div class="col-md-4">
+							<h3>Tour Packages</h3>
+							<p>When we say tour package, it means a pre-arrangement, prepaid trip that combines two or more travel components like airfare, airport transfer, accommodation ..</p>
+							<p><a href="#">Learn more</a></p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="section-3">
+				<div class="container text-center">
+					<h1>Our Destinations</h1>
+					<p>Choose Your Next Destination</p>
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/01-greece.jpg" width="100%">
+							<div class="image-text">
+								<strong>$590</strong>
+								<h3>Santorini, Greece</h3>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<img src="images/02-rome.jpg" width="100%">
+							<div class="image-text">
+								<strong>$390</strong>
+								<h3>Rome, Italy</h3>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<img src="images/03-japan.jpg" width="100%">
+							<div class="image-text">
+								<strong>$390</strong>
+								<h3>Mount Fuji, Japan</h3>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/04-dubai.jpg" width="100%">
+							<div class="image-text">
+								<strong>$390</strong>
+								<h3>Camels Dubai</h3>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<img src="images/05-london.jpg" width="100%">
+							<div class="image-text">
+								<strong>$290</strong>
+								<h3>Elizabeth Tower, London</h3>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<img src="images/06-australia.jpg" width="100%">
+							<div class="image-text">
+								<strong>$390</strong>
+								<h3>Opera House, Australia</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-4">
+				<div class="container-fluid m-0 p-p">
+					<div class="">
+						<i class=""></i>
+						<h1>Experience Our Outstanding Services</h1>
+					</div>
+				</div>
+			</section>
+			<section class="section-5">
+				<div class="container">
+					<div class="our-service text-center">
+						 <h1 class="font-weight-light text-black">Our Services</h1>
+					    <p>We Offer The Following Services</p>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<h3>Air Ticketing</h3>
+							<p>Utilize new technology for scraping flight fares. Never pay more than the seat next to you. Don't Waste Hours finding Cheap Flights</p>
+							<p><a href="#">Learn more</a></p>
+						</div>
+						<div class="col-md-4">
+							<h3>Cruises</h3>
+							<p>Discover our luxury cruises to the Caribbean, Mediterranean, Alaska & more. Voted best premium Cruise Line 14 years running. Book your cruise today!</p>
+							<p><a href="#">Learn more</a></p>
+						</div>
+						<div class="col-md-4">
+							<h3>Tour Packages</h3>
+							<p>When we say tour package, it means a pre-arrangement, prepaid trip that combines two or more travel components like airfare, airport transfer, accommodation ..</p>
+							<p><a href="#">Learn more</a></p>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-4">
+							<h3>Hotel Accomodations</h3>
+							<p>View accommodation options near Pattaya Exhibition and Convention Hall (PEACH), ... The below list of hotels offers a range of room type options to suit all ...</p>
+							<p><a href="#">Learn more</a></p>
+						</div>
+						<div class="col-md-4">
+							<h3>Sea Explorations</h3>
+							<p>Deep sea areas support unique ecosystems and are sources for energy and minerals. Exploring and mapping the oceans will help us fill gaps to better ...</p>
+							<p><a href="#">Learn more</a></p>
+						</div>
+						<div class="col-md-4">
+							<h3>Ski Experiences</h3>
+							<p>From a skier's point of view, everything you can dream about is waiting for you in that small country of the Balkan region. From the North to the South are .</p>
+							<p><a href="#">Learn more</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<section class="section-6">
+				<hr>
+				<div class="blog">
+					<div class="container">
+						<h1 class="text-center">Our Blogs</h1>
+						<p class="text-center">See Our Daily News <span>&amp;</span> Updates</p>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="card">
+									<img class="card-image-top" src="images/hero_bg_1.jpg" width="100%">
+									<div class="card-caption">
+										<h3 class="card-title"><a class="card-link" href="#">How to Plan Your Vacation</a></h3>
+										<h5 class="card-title">by Theresa Winston <span>&bull;</span> Jan 18, 2019 at 2:00 pm <span>&#9679;</span><a class="card-link" href="#">News</a></h5>
+										<p class="card-text">Traveling internationally? Be mindful of the customs, traditions, and common laws of the country you're visiting. Researching these can go a long way to make sure you’re being respectful and safe.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card">
+									<img class="card-image-top" src="images/hero_bg_2.jpg" width="100%">
+									<div class="card-caption">
+										<h3 class="card-title"><a class="card-link" href="#">How to Plan Your Vacation</a></h3>
+										<h5 class="card-title">by Theresa Winston <span>&bull;</span> Jan 18, 2019 at 2:00 pm <span>&#9679;</span><a class="card-link" href="#">News</a></h5>
+										<p class="card-text">"I just love having EVERYTHING in one place." "I'm just glad there's no more bickering about who spent how much more..." "Sway is so pretty... I can't get over it. I made one for my honeymoon and my parents will STILL look at it!"</p>
+									</div>	
+								</div>
+							</div>
+							
+						</div>
+						<a class="btn btn-primary btn-center mr-center" href="#">View All Blog Posts</a>
+					</div>
+				</div>
+			</section>
+			<section class="section-7">
+				<div class="container-fluid p-0 m-0 text-center">
+					<h1>Want To Travel With Us?</h1>
+					<a class="btn btn-danger mr-20" href="#">Book Now</a>
+				</div>
+			</section>
+		</main>
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h3>Want To Travel With Us?</h3>
+						<p>Travel takes us out of our comfort zones and inspires us to see, taste and try new things. It constantly challenges us, not only to adapt to and explore new surroundings, but also to engage with different people, to embrace adventures as they come and to share new and meaningful experiences with friends and loved ones.</p>
+					</div>
+					<div class="col-md-2">
+						<h3>Navigations</h3>
+						<ul class="na">
+							<li class="na-item"><a class="list-link" href="index.html">Home</a></li>
+							<li class="na-item"><a class="list-link" href="destination.html">Destination</a></li>
+							<li class="na-item"><a class="list-link" href="discount.html">Services</a></li>
+							<li class="na-item"><a class="list-link" href="about.html">About</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h3>Just Select </h3>
+						<ul>
+							<li><a class="list-link" href="about.html">About Us</a></li>
+							<li><a class="list-link" href="destination.html">Privacy Policy</a></li>
+							<li><a class="list-link" href="contact.html">Contact Us</a></li>
+							<li><a class="list-link" href="discount.html">Discounts</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h3>Subscribe Newsletter</h3>
+						<p>Don't forget to subscribe my traveller website. we are updating always</p>
+						<input type="email" class="email" placeholder="Enter Email"><span><a type="button"><button>send</button></a></span>
+					</div>
+				</div>
+				
+				<div class="container text-center icon">
+					<i class="fab fa-2x fa-facebook-square"></i>
+					<i class="fab fa-2x fa-instagram"></i>
+					<i class="fab fa-2x fa-twitter"></i>
+					<i class="fab fa-2x fa-linkedin-in"></i>
+				</div>
+				<h4 class="text-center">Copyright <span>©2020 </span> All rights reserved | This template is made with  by <span>Rishav</span>.</h4>
+			</div>
+		</footer>
+	</body>
+</html>

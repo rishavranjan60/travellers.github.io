@@ -1,0 +1,38 @@
+.about .row {
+    padding: 7%;
+}
+
+.about .box-1{
+    padding: 5%;
+    background-color: mediumspringgreen;
+    border: 1px solid white;
+    position: relative;
+    right: 20%;
+    top: 15%;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px #454343,  5px 5px 5px #454343;
+}
+.about .box-1 h4{
+    font-size: 20px;
+    color: #24187C;
+}
+
+.about .box-1 b{
+    color: yellow;
+    font-size: 28px;
+   
+}
+.about .box-1 h2{
+    color: white;
+}
+.about .box-1 h2 span{
+    color: yellow;
+}
+
+.about .box-2 {
+    color: whitesmoke;
+    background-color: aquamarine;
+    margin-top: 8%;
+    padding: 10%;
+    box-shadow: 4px 4px 4px gray, 4px 4px 4px gray;
+}
